@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./images/pattern-glasses.jpg);
+  background-color: black; /* Used if the image is unavailable */  
+  background-position: center; /* Center the image */
+  background-size: contain; 
+  height: 1000px;
+  
 }
 
 code {

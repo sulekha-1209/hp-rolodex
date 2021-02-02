@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import {Component} from 'react';
 import './App.css';
 
-function App() {
-  return (
+import {CardList} from './components/card-list/card-list.component'
+import {SearchBox} from './components/search-bar/search-bar.component'
+
+class App extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      'characters' : [],
+      'searchField': ''
+    }
+
+  }
+
+  handleChange = e => { 
+    this.setState({searchField:e.target.value})
+  }
+
+  render() {
+  const { characters, searchField} = this.state;
+  const filteredCharacters = characters.filter(character=>character.name.toLowerCase().includes(searchField.toLowerCase()))
+  return (    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> HP Rolodex </h1>
+      <SearchBox placeholder = 'search HP characters' handleChange={this.handleChange}></SearchBox>
+      <CardList characters = {filteredCharacters}/>       
     </div>
-  );
+  );}
+
+  componentDidMount(){
+    fetch('http://hp-api.herokuapp.com/api/characters')
+    .then(response => response.json())
+    .then(hpCharacters => this.setState({characters:hpCharacters}))
+  }
 }
 
 export default App;
