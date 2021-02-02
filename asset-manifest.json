@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hp-rolodex/static/css/main.71ad04ce.chunk.css",
+    "main.js": "/hp-rolodex/static/js/main.aae7de7e.chunk.js",
+    "main.js.map": "/hp-rolodex/static/js/main.aae7de7e.chunk.js.map",
+    "runtime-main.js": "/hp-rolodex/static/js/runtime-main.67d2d1cb.js",
+    "runtime-main.js.map": "/hp-rolodex/static/js/runtime-main.67d2d1cb.js.map",
+    "static/js/2.0a275f48.chunk.js": "/hp-rolodex/static/js/2.0a275f48.chunk.js",
+    "static/js/2.0a275f48.chunk.js.map": "/hp-rolodex/static/js/2.0a275f48.chunk.js.map",
+    "static/js/3.90c520f7.chunk.js": "/hp-rolodex/static/js/3.90c520f7.chunk.js",
+    "static/js/3.90c520f7.chunk.js.map": "/hp-rolodex/static/js/3.90c520f7.chunk.js.map",
+    "index.html": "/hp-rolodex/index.html",
+    "static/css/main.71ad04ce.chunk.css.map": "/hp-rolodex/static/css/main.71ad04ce.chunk.css.map",
+    "static/js/2.0a275f48.chunk.js.LICENSE.txt": "/hp-rolodex/static/js/2.0a275f48.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/hp-rolodex/static/media/pattern-glasses.30032439.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67d2d1cb.js",
+    "static/js/2.0a275f48.chunk.js",
+    "static/css/main.71ad04ce.chunk.css",
+    "static/js/main.aae7de7e.chunk.js"
+  ]
+}
